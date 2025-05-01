@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GURAV KRUTIKA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Krutika</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#Skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+        <i class='bx bx-menu' id="menu"></i>
+    </header>
+    <section class="home" id="home">
+
+        <div class="text-content">
+            <h2>Gurav Krutika</h2>
+            <h5>WEBSITE DESIGNER</h5>
+            <p>
+            <p>Knowledgeable, data-driven, and adaptive web developer with 2 years’ coding training and Bachelor of
+                computer application . Collaborative and detail-oriented team player with
+                excellent communication skills and ability to work with a team to develop desktop applications.
+                Proficient working with Git / GitHub repositories.</p>
+            </p>
+            <!-- <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div> -->
+            <!-- <button class="btn">Downlaod C.V</button> -->
+             <button class="btn"><a href="./files/Krutika Gurav_Resume.pdf"  download class="download-btn">Downlaod C.V</a></button>
+        </div>
+        <div class="cover">
+            <div class="image"></div>
+            <div class="layout"></div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="image-cover">
+
+            <div class="img">
+                <h2>Gurav Krutika</h2>
+                <h5>WEBSITE DESIGNER</h5>
+                <img src="profile1.jpeg" alt="">
+            </div>
+        </div>
+        <div class="about-text">
+            <h3 class="title"><i class='bx bx-user'></i>ABOUT ME</h3>
+            <p>Graduated with a Bachelor's degree in BCA. Possessing strong interpersonal skills and a passion for web
+                development, I am eager to kickstart my career and contribute positively
+                to an organisation.
+            </p>
+            <p>Recent computer science graduate with a strong foundation in web development technologies such as HTML,
+                CSS, and JavaScript. Seeking an entry-level position where I can use my skills to develop and maintain
+                high-quality websites.
+            </p>
+            <button class="btn">Read more</button>
+        </div>
+    </section>
+    <section class="Skills" id="Skills">
+        <h3 class="title"><i class='bx bx-user'></i>SKILLS</h3>
+        <div class="skill-container">
+            <div class="skills-content">
+                <i class='bx bx-code-alt'></i>
+                <h5>HTML</h5>
+                <p>HTML5: Proficient in writing clean, semantic, and accessible HTML code. Experienced in structuring
+                    content for web pages using best practices for SEO and responsive design. Familiar with integrating
+                    HTML with CSS and JavaScript to build dynamic, user-friendly interfaces.
+                </p>
+
+            </div>
+            <div class="skills-content">
+                <i class='bx bx-signal-5'></i>
+                <h5>CSS</h5>
+                <p>Skilled in creating responsive, visually appealing web designs using modern CSS techniques.
+                    Proficient with Flexbox, Grid, media queries, and custom animations. Experienced in writing
+                    maintainable and scalable stylesheets, and integrating CSS which enhanced modularity and efficiency.
+                </p>
+            </div>
+            <div class="skills-content">
+                <i class='bx bxl-adobe'></i>
+                <h5>JAVASCRIPT</h5>
+                <p>Proficient in writing clean, efficient, and modular JavaScript code for dynamic
+                    web applications. Experienced in DOM manipulation, event handling, asynchronous programming
+                    , and working with APIs. 
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <section class="education" id="education">
+        <h3 class="title"><i class='bx bx-book-open'></i>EDUCATION</h3>
+        <div class="row">
+            <div class="column">
+                <div class="education-content">
+                    <div class="year"><i class='bx bx-time'></i>2021-2024 </div>
+                    <h2>Shreyarth University</h2>
+                    <p>Bachelors in Computer Application</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="education-content">
+                    <div class="year"><i class='bx bx-time'></i>Pursuing</div>
+                    <h2>Parul University</h2>
+                    <p>Masters in Computer Application</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="title"><i class='bx bx-headphone'></i>CONTACT ME</h2>
+        <form action="#" id="">
+            <div class="input-box">
+                <input type="text" required placeholder="Full Name">
+                <input type="email" required placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="tel" required placeholder="Mobile Number">
+                <input type="email" required placeholder="Subject For">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    <footer>
+        <div class="text">
+            <p>Copyright @ 2024</p>
+        </div>
+        <a href="#"> <i class='bx bx-up-arrow-alt'></i></a>
+    </footer>
+    <script>
+        const menubar = document.querySelector('#menu');
+        const Navbar = document.querySelector('.navbar');
+        menubar.onclick = () => {
+            menubar.classList.toggle('bx-x');
+            Navbar.classList.toggle('active')
+        }
+        const section = document.querySelectorAll('section');
+        const navlink = document.querySelectorAll('header nav a')
+        window.onscroll = () => {
+            section.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 150;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id')
+                if (top > offset && top < offset + height) {
+                    sec.classList.add('start-animation');
+                    navlink.forEach(links => {
+                        links.classList.remove('active')
+                        document.querySelector('header nav a[href*=' + id + ']').classList.add('active')
+
+                    })
+                }
+            })
+            var header = document.querySelector('.header');
+            header.classList.toggle('sticky', window.scrollY > 100)
+            menubar.classList.remove('bx-x');
+            Navbar.classList.remove('active')
+        }
+
+    </script>
+</body>
+
+</html>
